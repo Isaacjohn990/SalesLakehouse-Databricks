@@ -31,7 +31,7 @@ for old_name, new_name in RENAME_COLUMNS.items():
 
 
 =============================================
---- Normalization
+Normalization
 =============================================
 # Marital Status mapping
 marital_map = (
@@ -62,7 +62,7 @@ df = df.withColumnRenamed(old_name, new_name)
 
 
 =============================================
---- Trimming all string Column
+Trimming all string Column
 =============================================
 # Trim all string columns
 df = (
@@ -75,7 +75,7 @@ df = (
 
 
 =================================================
---- Removing records with mussing Customers ID
+Removing records with mussing Customers ID
 =================================================
 df = df.filter(col("cst_id").isNotNull())
 
